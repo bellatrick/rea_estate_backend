@@ -5,8 +5,9 @@
   "scripts": {
     "test": "jest --watchAll",
     "test_t":"npx jest src/__tests__/landlord.test.ts",
-    "start": "ts-node src/index.ts",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
