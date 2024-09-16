@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 export const connectToDB = async () => {
   if (process.env.NODE_ENV === 'test') {
-    return await mongoose.connect(process.env.MONGO_URI as string);
+    return await mongoose.connect(process.env.TEST_DB as string);
   } else {
     return await mongoose
       .connect(process.env.MONGO_URI as string)
