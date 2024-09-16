@@ -7,7 +7,7 @@
     "test_t":"npx jest src/__tests__/landlord.test.ts",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "npm install && npx tsc",
-    "start": "node ./dist/index.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
